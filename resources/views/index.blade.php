@@ -10,9 +10,8 @@
 
 <body>
 
-  <header class="nav-bar"> <!--skew kuning asli-->
-    <div class="tambal"> <!--nambal skew putih-->
-
+  <div class="tambal"> <!--nambal skew putih-->
+    <header class="nav-bar"> <!--skew kuning asli-->
       <div class="wrapper"> <!--skew kuning bawah-->
         <h1 class="title">
           <img src="{{ asset('images/brennaLogo.png') }}" alt="logo">
@@ -37,7 +36,7 @@
         <p>EVENT PLANNER</p>
       </div>
 
-    </div>
+  </div>
   </header>
 
   <section class="events">
