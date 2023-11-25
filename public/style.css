@@ -51,11 +51,12 @@ header {
 .nav-list a {
     text-decoration: none;
     color: #000;
-    transition: color 0.3s ease;
+    transition: 0.3s ease;
 }
 
 .nav-list a:hover {
     color: #fff;
+    font-size: 1.15rem;
 }
 
 .nav-list li {
@@ -73,11 +74,12 @@ header {
     cursor: pointer;
     font-weight: bolder;
     box-shadow: 0 0.125rem 0.25rem rgba(0, 0, 0, 0.5);
-    transition: background-color 0.3s ease;
+    transition: 0.3s ease;
 }
 
 .button:hover {
     background-color: #5ac8fa;
+    scale: 1.05;
 }
 
 .big-title {
