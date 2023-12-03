@@ -4,43 +4,33 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Brenna</title>
-  <link rel="stylesheet" href="{{ asset('style.css') }}">
+  <title>Brenna Signature</title>
+  <link rel="stylesheet" href="{{ asset('styles.css') }}">
 </head>
 
 <body>
 
-  <div class="tambal"> <!--nambal skew putih-->
-    <header class="nav-bar"> <!--skew kuning asli-->
-      <div class="wrapper"> <!--skew kuning bawah-->
-        <h1 class="title">
-          <img src="{{ asset('images/brennaLogo.png') }}" alt="logo">
-          <a href="/">BRENNA SIGNATURE</a>
-        </h1>
-
-        <nav>
-          <ul class="nav-list">
-            <li><a href="#">Home</a></li>
-            <li><a href="#">Events</a></li>
-            <li><a href="#">About Us</a></li>
-            <li><a href="#">Team</a></li>
-            <li><a href="#">Contacts</a></li>
-            <li>
-              <button class="button" onclick="window.location.href='https://api.whatsapp.com/send?phone=6281312312312&text=Send20%a20%quote'">Contact Whatsapp</button>
-            </li>
-          </ul>
-        </nav>
+  <section class="sec1">
+    <div class="navbar">
+      <div class="logo">
+        <img src="{{ asset('images/brennaLogo.png') }}" alt="" />
+        <h1>Brenna Signature</h1>
       </div>
-
-      <div class="big-title">
-        <p>EVENT PLANNER</p>
+      <div class="navbar-menu">
+        <ul class="menu">
+          <li><a href="#home">Home</a></li>
+          <li><a href="#event">Event</a></li>
+          <li><a href="#about">About</a></li>
+          <li><a href="#contact">Contact</a></li>
+        </ul>
       </div>
+    </div>
 
-  </div>
-  </header>
-
-  <section class="events">
-    <h1>EVENTS</h1>
+    <div class="hero">
+      <div class="header">
+        <span>Event planner</span>
+      </div>
+    </div>
   </section>
 
 </body>

@@ -107,6 +107,7 @@ header {
     justify-content: flex-end;
     align-items: center;
     height: 50vh;
+    /* background-color: red; */
 }
 
 .events h1 {
