@@ -7,7 +7,7 @@
     <div class="alert alert-danger">{{ session('errorLogin') }}</div>
 @endif
 
-    <form action="{{route('login.post')}}" method="POST" class="ms-auto me=auto mt-auto" style="width: 500px">
+    <form action="{{route('login.post')}}" method="POST" class="ms-auto me=auto mt-5" style="width: 500px">
        @csrf
         <div class="form-group">
           <label for="exampleInputEmail1">Email address</label>
