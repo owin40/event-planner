@@ -16,39 +16,41 @@
         <img src="{{ asset('images/brennaLogo.png') }}" alt="" />
         <h1>Brenna Signature</h1>
       </div>
-      <div class="navbar-menu">
+      <div class="navbar-menu" id="navbarMenu">
         <ul class="menu">
-          <li><a href="#home">Home</a></li>
-          <li><a href="#event">Event</a></li>
-          <li><a href="#about">About</a></li>
+          <li><a class="navlink" href="#event">Event</a></li>
+          <li><a class="navlink" href="#about">About</a></li>
+          <li><a class="navlink" href="#team">Team</a></li>
           <li><a class="contact-button" href="#contact">Contact</a></li>
         </ul>
       </div>
-      <div class="menu-bar">
+      <!-- <div class="menu-bar" id="menuIcon">
         <img src="{{ asset('images/menu.svg') }}" alt="">
-      </div>
+      </div> -->
     </div>
 
     <div class="hero">
       <div class="header">
-        <span>Event planner</span>
+        <span class="evnt">Event planner</span>
+        <span class="sign">Brenna Signature</span>
       </div>
 
     </div>
   </section>
 
-  <section class="sec2">
+  <section id="event" class="sec2">
     <div class="caro">
+      <h2>Events</h2>
       <div class="car1">
-        <img src="https://via.placeholder.com/300x300/808080" alt="">
-        <img src="https://via.placeholder.com/300x300/808080" alt="">
-        <img src="https://via.placeholder.com/300x300/808080" alt="">
-        <img src="https://via.placeholder.com/300x300/808080" alt="">
+        <img src="{{ asset('images/placeholder.jpg') }}" alt="">
+        <img src="{{ asset('images/placeholder.jpg') }}" alt="">
+        <img src="{{ asset('images/placeholder.jpg') }}" alt="">
+        <img src="{{ asset('images/placeholder.jpg') }}" alt="">
       </div>
     </div>
   </section>
 
-  <section class="sec3">
+  <section id="about" class="sec3">
     <div class="about">
       <div class="about-content">
         <h2>Why Choose Us?</h2>
@@ -56,10 +58,48 @@
         <div class="about-button"><a class="contact-button" href="#contact">Contact</a></div>
       </div>
       <div class="about-image">
-        <img src="https://via.placeholder.com/300x300/808080" alt="">
+        <img src="{{ asset('images/placeholder.jpg') }}" alt="">
       </div>
     </div>
   </section>
+
+  <section id="team" class="sec4">
+    <div class="team">
+      <h2>Team</h2>
+      <div class="team-content">
+
+        <h3>Board of Director</h3>
+
+        <div class="team-atas">
+          <img src="{{ asset('images/placeholder.jpg') }}" alt="">
+          <img src="{{ asset('images/placeholder.jpg') }}" alt="">
+          <img src="{{ asset('images/placeholder.jpg') }}" alt="">
+          <img src="{{ asset('images/placeholder.jpg') }}" alt="">
+        </div>
+
+        <h3>Brenna Signature Founder Team</h3>
+
+        <div class="team-bawah">
+          <img src="{{ asset('images/placeholder.jpg') }}" alt="">
+          <img src="{{ asset('images/placeholder.jpg') }}" alt="">
+          <img src="{{ asset('images/placeholder.jpg') }}" alt="">
+          <img src="{{ asset('images/placeholder.jpg') }}" alt="">
+          <img src="{{ asset('images/placeholder.jpg') }}" alt="">
+          <img src="{{ asset('images/placeholder.jpg') }}" alt="">
+        </div>
+      </div>
+    </div>
+  </section>
+
+
+  <footer>
+    <div class="footer">
+      <p>&copy; Brenna Signature. All rights reserved.</p>
+    </div>
+  </footer>
+
+  <button id="scrollToTopBtn" onclick="scrollToTop()">Scroll to Top</button>
+  <script src="{{ asset('script.js') }}"></script>
 
 </body>
 
