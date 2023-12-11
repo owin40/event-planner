@@ -21,7 +21,7 @@
           <li><a class="navlink" href="#about">About</a></li>
           <li><a class="navlink" href="#team">Team</a></li>
           <li><a class="navlink" href="/login">Login</a></li>
-          <li><a class="contact-button" href="#contact">Contact</a></li>
+          <li><a class="contact-button" href="https://api.whatsapp.com/send?phone=6285900077107">Contact</a></li>
         </ul>
       </div>
       <!-- <div class="menu-bar" id="menuIcon">
@@ -44,19 +44,19 @@
       <div class="car1">
         <div class="icar">
           <img src="{{ asset('images/event1.jpg') }}" alt="">
-          <p>Menari</p>
+          <h3>Menari</h3>
         </div>
         <div class="icar">
           <img src="{{ asset('images/event2.jpg') }}" alt="">
-          <p>Menggambar</p>
+          <h3>Menggambar</h3>
         </div>
         <div class="icar">
           <img src="{{ asset('images/event3.jpg') }}" alt="">
-          <p>Menyanyi</p>
+          <h3>Menyanyi</h3>
         </div>
         <div class="icar">
           <img src="{{ asset('images/event4.jpg') }}" alt="">
-          <p>Model</p>
+          <h3>Model</h3>
         </div>
       </div>
 
@@ -84,7 +84,7 @@
           menjaga kualitas kegiatan.</p>
         <p>A. N. Fatharany</p>
         <h3>CEO Brenna Signature</h3>
-        <div class="about-button"><a class="contact-button" href="#contact">Contact</a></div>
+        <div class="about-button"><a class="contact-button" href="https://api.whatsapp.com/send?phone=6287821542466">Contact</a></div>
       </div>
       <div class="about-image">
         <img src="{{ asset('images/brennaLogo.png') }}" alt="">
@@ -94,46 +94,56 @@
 
   <section id="team" class="sec4">
     <div class="team">
-      <h2>Team</h2>
+      <h1>Team</h1>
       <div class="team-content">
 
-        <h3>Board of Director</h3>
+        <h2>Board of Director</h2>
 
         <div class="team-atas">
-          <div class="icar"><img src="{{ asset('images/placeholder.jpg') }}" alt="">
-            <p>satu</p>
+          <div class="icar"><img src="{{ asset('images/1b.jpg') }}" alt="">
+            <h4>Chief Executive Officer</h4>
+            <p>A. N. Fatharany</p>
           </div>
-          <div class="icar"><img src="{{ asset('images/placeholder.jpg') }}" alt="">
-            <p>dua</p>
+          <div class="icar"><img src="{{ asset('images/2b.jpg') }}" alt="">
+            <h4>Chief Marketing Officer</h4>
+            <p>Mimi Dewie</p>
           </div>
-          <div class="icar"><img src="{{ asset('images/placeholder.jpg') }}" alt="">
-            <p>tiga</p>
+          <div class="icar"><img src="{{ asset('images/3b.jpg') }}" alt="">
+            <h4>Chief Marketing Officer</h4>
+            <p>Yanna Erlan</p>
           </div>
-          <div class="icar"><img src="{{ asset('images/placeholder.jpg') }}" alt="">
-            <p>empat</p>
+          <div class="icar"><img src="{{ asset('images/4b.jpg') }}" alt="">
+            <h4>Chief Financial Officer</h4>
+            <p>Iyan Suhendar (Abi)</p>
           </div>
         </div>
 
-        <h3>Brenna Signature Founder Team</h3>
+        <h2>Brenna Signature Founder Team</h2>
 
         <div class="team-bawah">
-          <div class="icar"><img src="{{ asset('images/placeholder.jpg') }}" alt="">
-            <p>lima</p>
+          <div class="icar"><img src="{{ asset('images/5b.jpg') }}" alt="">
+            <h4>Project Manager</h4>
+            <p>Richi</p>
           </div>
-          <div class="icar"><img src="{{ asset('images/placeholder.jpg') }}" alt="">
-            <p>enam</p>
+          <div class="icar"><img src="{{ asset('images/6b.jpg') }}" alt="">
+            <h4>Marketing Manager</h4>
+            <p>Grace</p>
           </div>
-          <div class="icar"><img src="{{ asset('images/placeholder.jpg') }}" alt="">
-            <p>tujuh</p>
+          <div class="icar"><img src="{{ asset('images/7b.jpg') }}" alt="">
+            <h4>Ass. Marketing Manager</h4>
+            <p>Riza</p>
           </div>
-          <div class="icar"><img src="{{ asset('images/placeholder.jpg') }}" alt="">
-            <p>delapan</p>
+          <div class="icar"><img src="{{ asset('images/8b.jpg') }}" alt="">
+            <h4>Event Producer</h4>
+            <p>Bagus</p>
           </div>
-          <div class="icar"><img src="{{ asset('images/placeholder.jpg') }}" alt="">
-            <p>sembilan</p>
+          <div class="icar"><img src="{{ asset('images/9b.jpg') }}" alt="">
+            <h4>Event Promotion</h4>
+            <p>Mia</p>
           </div>
-          <div class="icar"><img src="{{ asset('images/placeholder.jpg') }}" alt="">
-            <p>sepuluh</p>
+          <div class="icar"><img src="{{ asset('images/10b.jpg') }}" alt="">
+            <h4>Event Promotion</h4>
+            <p>Cece Ekalita</p>
           </div>
         </div>
       </div>
