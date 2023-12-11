@@ -33,6 +33,6 @@ class EventController extends Controller
 
         $event->save();
 
-        return redirect()->route('index')->with('success', 'Event added successfully.');
+        return redirect()->route('events.create')->with('success', 'Event added successfully.');
     }
 }
