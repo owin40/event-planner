@@ -47,6 +47,35 @@
         <img src="{{ asset('images/placeholder.jpg') }}" alt="">
         <img src="{{ asset('images/placeholder.jpg') }}" alt="">
       </div>
+
+      <!-- Add your form here -->
+      <div class="event-form">
+        <h2>Add Event</h2>
+        <form action="{{ route('events.store') }}" method="post" enctype="multipart/form-data">
+          @csrf
+            <div class="form-group">
+                <label for="photo">Photo:</label>
+                <input type="file" name="photo" required>
+            </div>
+    
+            <div class="form-group">
+                <label for="name">Name:</label>
+                <input type="text" name="name" required>
+            </div>
+    
+            <div class="form-group">
+                <label for="description">Description:</label>
+                <textarea name="description" required></textarea>
+            </div>
+    
+            <div class="form-group">
+                <button type="submit">Add Event</button>
+            </div>
+        </form>
+    </div>
+    
+    <!-- End of the form -->
+
     </div>
   </section>
 

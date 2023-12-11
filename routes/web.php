@@ -2,6 +2,7 @@
 
 use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\AuthManager;
+use App\Http\Controllers\EventController;
 
 /*
 |--------------------------------------------------------------------------
@@ -42,5 +43,17 @@ Route::get('/login',[AuthManager::class, 'login'])->name('login');
 Route::post('/login',[AuthManager::class, 'loginPost'])->name('login.post');
 
 
+<<<<<<< Updated upstream
 Route::get('/register',[AuthManager::class, 'regist'])->name('regist');
 Route::post('/register',[AuthManager::class, 'registPost'])->name('regist.post');
+=======
+Route::get('/regist',[AuthManager::class, 'regist'])->name('regist');
+Route::post('/regist',[AuthManager::class, 'registPost'])->name('regist.post');
+
+// routes/web.php
+Route::get('/events', [EventController::class, 'index'])->name('events.index');
+Route::get('/events/create', [EventController::class, 'create'])->name('events.create');
+Route::post('/events', [EventController::class, 'store'])->name('events.store');
+// ... other routes
+
+>>>>>>> Stashed changes
