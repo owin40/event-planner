@@ -93,22 +93,16 @@ header {
     font-style: bold;
     font-weight: 700;
     text-align: left;
-    width: 50%;
+    /* width: 50%; */
     /* transform: skewY(5deg); */
 }
 
 .big-title p {
     line-height: 90%;
     margin: 0 6rem;
-}
-
-.events {
-    display: flex;
-    flex-direction: column;
-    justify-content: flex-end;
-    align-items: center;
-    height: 50vh;
-    /* background-color: red; */
+    /* make it absolute */
+    position: absolute;
+    overflow: hidden;
 }
 
 .events h1 {
@@ -116,4 +110,344 @@ header {
     font-weight: 600;
     font-style: italic;
     margin-bottom: 2rem;
+}
+
+.sec1 {
+    background-color: #ffc400;
+}
+
+.form {
+    background-color: #ffc400;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+}
+
+.login-form {
+    max-width: 400px;
+    width: 100%;
+    padding: 20px;
+    background-color: #fff;
+    border-radius: 5px;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+}
+
+.login-form img {
+    width: 100%;
+    height: auto;
+    margin-bottom: 20px;
+}
+
+.login-form form {
+    display: flex;
+    flex-direction: column;
+}
+
+.login-form p {
+    font-size: medium;
+    font-weight: 500;
+    text-align: center;
+}
+
+.login-form a {
+    color: #ffc400;
+    text-decoration: none;
+
+}
+
+.login-form label {
+    margin-bottom: 8px;
+    font-weight: bold;
+}
+
+.login-form input {
+    padding: 10px;
+    margin-bottom: 15px;
+    background-color: #0000001f;
+    border: none;
+    /* Remove border */
+    border-radius: 5px;
+    padding: 15px;
+    font-size: medium;
+}
+
+
+.login-form button {
+    padding: 10px;
+    background-color: #ffc400;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    font-size: 2rem;
+    font-style: bold;
+    font-weight: 700;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.login-form button:hover {
+    background-color: #e9b302;
+}
+
+.events {
+    text-align: center;
+    padding: 20px;
+    background-color: white;
+    margin: 20px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+}
+
+th,
+td {
+    border: 1px solid #ddd;
+    padding: 8px;
+    text-align: center;
+}
+
+th {
+    background-color: #f2f2f2;
+}
+
+.edit-btn,
+.delete-btn {
+    padding: 5px 10px;
+    margin: 5px;
+    font-size: large;
+    cursor: pointer;
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    border-radius: 4px;
+}
+
+.delete-btn {
+    background-color: #f44336;
+}
+
+.team-img {
+    max-width: 100px;
+    max-height: 100px;
+    object-fit: cover;
+    border-radius: 5%;
+}
+
+.modal {
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+}
+
+.modal-content {
+    background-color: #fefefe;
+    margin: 15% auto;
+    padding: 20px;
+    border: 1px solid #888;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    width: fit-content;
+    border-radius: 5px;
+}
+
+.modal-content h2 {
+    text-align: center;
+}
+
+.close {
+    color: #aaa;
+    float: right;
+    margin: 5px;
+    font-size: 28px;
+    font-weight: bold;
+}
+
+.close:hover,
+.close:focus {
+    color: black;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+.modal form {
+    display: flex;
+    flex-direction: column;
+    max-width: 400px;
+    /* Set a maximum width for the form */
+    margin: 0 auto;
+    /* Center the form horizontally */
+}
+
+.modal label {
+    display: block;
+    /* Make labels a block element to stack them on top of inputs */
+    margin-bottom: 8px;
+    font-weight: bold;
+    text-align: left;
+    /* Align labels to the left */
+}
+
+.modal input {
+    box-sizing: border-box;
+    /* Include padding and border in the element's total width and height */
+    width: 100%;
+    /* Make the input take up 100% of the container */
+    padding: 10px;
+    margin-bottom: 15px;
+    background-color: #0000001f;
+    border: none;
+    border-radius: 5px;
+    font-size: medium;
+}
+
+
+.modal p {
+    font-size: 1.8rem;
+    font-weight: bold;
+    text-align: center;
+    margin-bottom: 15px;
+}
+
+.modal .button-container {
+    display: flex;
+    justify-content: space-between;
+}
+
+.modal button {
+    margin: 5px;
+    padding: 10px;
+    background-color: #4CAF50;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    font-size: 2rem;
+    font-style: bold;
+    font-weight: 700;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.cancel-btn {
+    background-color: #e74c3c !important;
+}
+
+.modal button:hover {
+    background-color: #e9b302;
+}
+
+.modal-delete {
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+}
+
+.modal-delete-content {
+    background-color: #fefefe;
+    margin: 15% auto;
+    padding: 20px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    width: fit-content;
+    border-radius: 5px;
+}
+
+.modal-delete-content h2 {
+    text-align: center;
+}
+
+.button-container {
+    display: flex;
+    gap: 10px;
+    /* Adjust the gap as needed */
+}
+
+.delete-confirm-btn,
+.delete-cancel-btn {
+    /* Add or modify styles for your buttons here */
+    padding: 10px;
+    background-color: #e74c3c;
+    color: #fff;
+    border: none;
+    cursor: pointer;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    font-size: large;
+    font-style: bold;
+    font-weight: 700;
+    border-radius: 5px;
+    transition: background-color 0.3s;
+    align-items: flex-start;
+}
+
+.delete-confirm-btn {
+    background-color: #4CAF50;
+}
+
+.add-event {
+    text-align: right;
+    margin-bottom: 10px;
+    /* Add some bottom margin for spacing */
+}
+
+.add-event button {
+    padding: 10px 20px;
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+.team-cards {
+    display: flex;
+    flex-wrap: wrap;
+    /* Allow teams to wrap onto the next line if there's not enough space */
+}
+
+.team-card {
+    width: calc(33.33% - 20px);
+    /* 33.33% width for each team card with a 10px margin on each side */
+    margin: 10px;
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    display: flex;
+    flex-direction: column;
+}
+
+.team-card img {
+    width: 100%;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+}
+
+.team-card .team-name {
+    padding: 10px;
+    text-align: center;
+    background-color: #f2f2f2;
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+    margin-top: auto;
+}
+
+
+
+@media (max-width: 768px) {
+    .team-card {
+        width: 100%;
+    }
 }

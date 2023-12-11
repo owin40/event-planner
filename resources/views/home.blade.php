@@ -22,10 +22,10 @@
 
           <nav>
             <ul class="nav-list">
-              <li><a href="#">Home</a></li>
-              <li><a href="#">Events</a></li>
+              <li><a href="/">Home</a></li>
+              <li><a href="/events">Events</a></li>
               <li><a href="#">About Us</a></li>
-              <li><a href="#">Team</a></li>
+              <li><a href="/team">Team</a></li>
               <li><a href="#">Contacts</a></li>
               <li>
                 <button class="button" onclick="window.location.href='https://api.whatsapp.com/send?phone=6281312312312&text=Send20%a20%quote'">Contact Whatsapp</button>

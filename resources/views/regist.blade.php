@@ -1,44 +1,35 @@
-@extends('layout')
-@section('title', 'Register')
-@section('content')
-<div class="container">
-    <div class="mt-5">
-        @if ($errors->any())
-            <div class="col-12">
-                @foreach ($errors->all() as $error)
-                    <div class="alert alert-danger">{{$error}}</div>
-                @endforeach
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login - Brenna</title>
+    <link rel="stylesheet" href="{{ asset('style.css') }}">
+</head>
+
+<body>
+
+    <section class="form">
+
+        <div class="login-form">
+            <div>
+                <img src="{{ asset('images/brennaLogo.png') }}" alt="logo">
             </div>
-        @endif
+            <form action="{{ route('regist.post') }}" method="POST">
+                <input type="name" id="name" name="name" placeholder="name" required>
+                <input type="email" id="email" name="email" placeholder="email" required>
 
-        @if (session()->has('errorRegist'))
-            <div class="alert alert-danger">{{ session('errorRegist') }}</div>
-        @endif
+                <input type="password" id="password" name="password" placeholder="password" required>
+                <input type="password-confirmation" id="password-confirmation" name="password-confirmation" placeholder="confirm password" required>
 
-        @if (session()->has('successRegist'))
-            <div class="alert alert-success">{{ session('successRegist') }}</div>
-        @endif
+                <button type="submit">Register</button>
+                <!-- <a href="/" class="button">Login</a> -->
+            </form>
+            <p >Already have an account? <a href="/login">Login</a></p>
+        </div>
 
-    </div>
-    <form action="{{ route('regist.post') }}" method="POST" class="ms-auto me-auto mt-5" style="width: 500px">
-        @csrf
-        <div class="form-group">
-            <label for="name">Name</label>
-            <input type="text" class="form-control" id="name" name="name" placeholder="Enter your name">
-        </div>
-        <div class="form-group">
-            <label for="email">Email address</label>
-            <input type="email" class="form-control" id="email" name="email" aria-describedby="emailHelp" placeholder="Enter email">
-        </div>
-        <div class="form-group">
-            <label for="password">Password</label>
-            <input type="password" class="form-control" id="password" name="password" placeholder="Password">
-        </div>
-        <div class="form-group">
-            <label for="password_confirmation">Confirm Password</label>
-            <input type="password" class="form-control" id="password_confirmation" name="password_confirmation" placeholder="Confirm Password">
-        </div>
-        <button type="submit" class="btn btn-primary">Register</button>
-    </form>
-</div>
-@endsection
+    </section>
+</body>
+
+</html>
