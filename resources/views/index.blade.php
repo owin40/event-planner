@@ -43,20 +43,20 @@
       <h2>Events</h2>
       <div class="car1">
         <div class="icar">
-          <img src="{{ asset('images/placeholder.jpg') }}" alt="">
-          <p>event1</p>
+          <img src="{{ asset('images/event1.jpg') }}" alt="">
+          <p>Menari</p>
         </div>
         <div class="icar">
-          <img src="{{ asset('images/placeholder.jpg') }}" alt="">
-          <p>event2</p>
+          <img src="{{ asset('images/event2.jpg') }}" alt="">
+          <p>Menggambar</p>
         </div>
         <div class="icar">
-          <img src="{{ asset('images/placeholder.jpg') }}" alt="">
-          <p>event3</p>
+          <img src="{{ asset('images/event3.jpg') }}" alt="">
+          <p>Menyanyi</p>
         </div>
         <div class="icar">
-          <img src="{{ asset('images/placeholder.jpg') }}" alt="">
-          <p>event4</p>
+          <img src="{{ asset('images/event4.jpg') }}" alt="">
+          <p>Model</p>
         </div>
       </div>
 
@@ -69,11 +69,25 @@
     <div class="about">
       <div class="about-content">
         <h2>Why Choose Us?</h2>
-        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Numquam expedita itaque repudiandae hic labore quos tempore assumenda eveniet? Odio nihil rem ea laudantium fuga vitae. Assumenda enim optio repudiandae dolor!</p>
+        <p>Industri event management terus berkembang dan menawarkan
+          berbagai peluang. Oleh karena itu Brenna Signature hadir sebagai
+          lini bisnis baru dari PT. Tiga Putra Bertaut sebagai holding
+          company. Dengan kombinasi pengetahuan, keterampilan dan
+          pengetahuan dari setiap individu team, Brenna Signature
+          senantiasa memberikan ide-ide kreatif dalam pengelolaan event
+          sehingga dapat selalu memberikan yang terbaik untuk
+          mewujudkan event yang menarik dan melebihi ekspektasi klien.
+          Kami akan menyusun konsep kegiatan, membuat timeline agar
+          waktu penyelenggaraan kegiatan berjalan dengan baik, selain itu
+          kami memberikan perspektif biaya yang fleksibel dimana dapat
+          menyesuaikan dengan budjet yang ada, namun dengan tetap
+          menjaga kualitas kegiatan.</p>
+        <p>A. N. Fatharany</p>
+        <h3>CEO Brenna Signature</h3>
         <div class="about-button"><a class="contact-button" href="#contact">Contact</a></div>
       </div>
       <div class="about-image">
-        <img src="{{ asset('images/placeholder.jpg') }}" alt="">
+        <img src="{{ asset('images/brennaLogo.png') }}" alt="">
       </div>
     </div>
   </section>

@@ -159,8 +159,9 @@ section {
     text-transform: uppercase;
 }
 
-.about-content {
+.about .about-content {
     max-width: 50vw;
+    padding: 0 2rem;
 }
 
 .about-image {
@@ -168,6 +169,7 @@ section {
     justify-content: center;
     max-width: 50vw;
     object-fit: cover;
+    align-items: center;
 }
 
 .about-image img {
