@@ -269,8 +269,9 @@ section {
         justify-content: center;
         background-color: rgba(255, 255, 255, 0.4);
         border-radius: 35px;
-        padding: 0.25rem 0.5rem;
+        /* padding: 0.25rem 0.5rem; */
         overflow: auto;
+        transform: scale(0.75);
     }
 
     .navbar .menu-bar {
