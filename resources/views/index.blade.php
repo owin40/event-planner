@@ -9,7 +9,6 @@
 </head>
 
 <body>
-
   <section class="sec1">
     <div class="navbar">
       <div class="logo">
@@ -21,6 +20,7 @@
           <li><a class="navlink" href="#event">Event</a></li>
           <li><a class="navlink" href="#about">About</a></li>
           <li><a class="navlink" href="#team">Team</a></li>
+          <li><a class="navlink" href="/login">Login</a></li>
           <li><a class="contact-button" href="#contact">Contact</a></li>
         </ul>
       </div>

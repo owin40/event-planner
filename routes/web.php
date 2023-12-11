@@ -44,3 +44,5 @@ Route::post('/login',[AuthManager::class, 'loginPost'])->name('login.post');
 
 Route::get('/regist',[AuthManager::class, 'regist'])->name('regist');
 Route::post('/regist',[AuthManager::class, 'registPost'])->name('regist.post');
+
+Route::resource('nyobacrud', 'untukcrud');
