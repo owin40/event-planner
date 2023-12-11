@@ -59,9 +59,6 @@
           <h3>Model</h3>
         </div>
       </div>
-
-
-
     </div>
   </section>
 
