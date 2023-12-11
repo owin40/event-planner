@@ -1,0 +1,4 @@
+1. cek .env db_database = eventplanner
+2. migrate:fresh
+
+(Kalau database berulah, migrate:reset, lalu migrate:fresh)

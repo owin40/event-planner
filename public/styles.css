@@ -140,6 +140,11 @@ section {
     border-radius: 35px;
 }
 
+.icar {
+    display: block;
+    text-align: center;
+}
+
 .sec3 {
     height: auto;
 }
@@ -340,9 +345,6 @@ section {
 
 /* Add this to your existing styles.css or create a new one */
 
-
-
-
 .event-form {
     max-width: 400px;
     margin: auto;
@@ -354,7 +356,7 @@ section {
 }
 
 .form-group {
-    margin-bottom: 20px;
+    margin-bottom: 10px;
 }
 
 label {
@@ -389,4 +391,3 @@ button {
 button:hover {
     background-color: #45a049;
 }
-

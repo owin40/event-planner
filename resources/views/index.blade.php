@@ -42,39 +42,25 @@
     <div class="caro">
       <h2>Events</h2>
       <div class="car1">
-        <img src="{{ asset('images/placeholder.jpg') }}" alt="">
-        <img src="{{ asset('images/placeholder.jpg') }}" alt="">
-        <img src="{{ asset('images/placeholder.jpg') }}" alt="">
-        <img src="{{ asset('images/placeholder.jpg') }}" alt="">
+        <div class="icar">
+          <img src="{{ asset('images/placeholder.jpg') }}" alt="">
+          <p>event1</p>
+        </div>
+        <div class="icar">
+          <img src="{{ asset('images/placeholder.jpg') }}" alt="">
+          <p>event2</p>
+        </div>
+        <div class="icar">
+          <img src="{{ asset('images/placeholder.jpg') }}" alt="">
+          <p>event3</p>
+        </div>
+        <div class="icar">
+          <img src="{{ asset('images/placeholder.jpg') }}" alt="">
+          <p>event4</p>
+        </div>
       </div>
 
-      <!-- Add your form here -->
-      <div class="event-form">
-        <h2>Add Event</h2>
-        <form action="{{ route('events.store') }}" method="post" enctype="multipart/form-data">
-          @csrf
-            <div class="form-group">
-                <label for="photo">Photo:</label>
-                <input type="file" name="photo" required>
-            </div>
-    
-            <div class="form-group">
-                <label for="name">Name:</label>
-                <input type="text" name="name" required>
-            </div>
-    
-            <div class="form-group">
-                <label for="description">Description:</label>
-                <textarea name="description" required></textarea>
-            </div>
-    
-            <div class="form-group">
-                <button type="submit">Add Event</button>
-            </div>
-        </form>
-    </div>
-    
-    <!-- End of the form -->
+
 
     </div>
   </section>
@@ -100,21 +86,41 @@
         <h3>Board of Director</h3>
 
         <div class="team-atas">
-          <img src="{{ asset('images/placeholder.jpg') }}" alt="">
-          <img src="{{ asset('images/placeholder.jpg') }}" alt="">
-          <img src="{{ asset('images/placeholder.jpg') }}" alt="">
-          <img src="{{ asset('images/placeholder.jpg') }}" alt="">
+          <div class="icar"><img src="{{ asset('images/placeholder.jpg') }}" alt="">
+            <p>satu</p>
+          </div>
+          <div class="icar"><img src="{{ asset('images/placeholder.jpg') }}" alt="">
+            <p>dua</p>
+          </div>
+          <div class="icar"><img src="{{ asset('images/placeholder.jpg') }}" alt="">
+            <p>tiga</p>
+          </div>
+          <div class="icar"><img src="{{ asset('images/placeholder.jpg') }}" alt="">
+            <p>empat</p>
+          </div>
         </div>
 
         <h3>Brenna Signature Founder Team</h3>
 
         <div class="team-bawah">
-          <img src="{{ asset('images/placeholder.jpg') }}" alt="">
-          <img src="{{ asset('images/placeholder.jpg') }}" alt="">
-          <img src="{{ asset('images/placeholder.jpg') }}" alt="">
-          <img src="{{ asset('images/placeholder.jpg') }}" alt="">
-          <img src="{{ asset('images/placeholder.jpg') }}" alt="">
-          <img src="{{ asset('images/placeholder.jpg') }}" alt="">
+          <div class="icar"><img src="{{ asset('images/placeholder.jpg') }}" alt="">
+            <p>lima</p>
+          </div>
+          <div class="icar"><img src="{{ asset('images/placeholder.jpg') }}" alt="">
+            <p>enam</p>
+          </div>
+          <div class="icar"><img src="{{ asset('images/placeholder.jpg') }}" alt="">
+            <p>tujuh</p>
+          </div>
+          <div class="icar"><img src="{{ asset('images/placeholder.jpg') }}" alt="">
+            <p>delapan</p>
+          </div>
+          <div class="icar"><img src="{{ asset('images/placeholder.jpg') }}" alt="">
+            <p>sembilan</p>
+          </div>
+          <div class="icar"><img src="{{ asset('images/placeholder.jpg') }}" alt="">
+            <p>sepuluh</p>
+          </div>
         </div>
       </div>
     </div>
