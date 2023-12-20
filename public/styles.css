@@ -30,6 +30,7 @@ body {
     margin: 0;
     padding: 0;
     scroll-behavior: smooth;
+    overflow-x: hidden;
 }
 
 section {
@@ -76,6 +77,13 @@ section {
 
 .navlink {
     color: var(--itemTerang);
+    transition: 0.3s ease;
+    display: inline-block;
+}
+
+.navlink:hover {
+    transform: scale(1.1);
+    color: var(--putih);
 }
 
 .contact-button {
@@ -84,6 +92,12 @@ section {
     padding: 0.5rem 1rem;
     color: var(--putih);
     text-decoration: none;
+    transition: 0.3s ease;
+    display: inline-block;
+}
+
+.contact-button:hover {
+    transform: scale(1.1);
 }
 
 .menu-bar {
@@ -140,6 +154,11 @@ section {
     border-radius: 35px;
 }
 
+.icar {
+    display: block;
+    text-align: center;
+}
+
 .sec3 {
     height: auto;
 }
@@ -154,8 +173,9 @@ section {
     text-transform: uppercase;
 }
 
-.about-content {
+.about .about-content {
     max-width: 50vw;
+    padding: 0 2rem;
 }
 
 .about-image {
@@ -163,6 +183,7 @@ section {
     justify-content: center;
     max-width: 50vw;
     object-fit: cover;
+    align-items: center;
 }
 
 .about-image img {
@@ -185,14 +206,17 @@ section {
     text-align: center;
 }
 
-.team h2 {
+.team h1 {
     text-transform: uppercase;
+    transform: scale(1.75);
 }
 
 .team img {
-    max-width: 300px;
-    max-height: 300px;
-    border-radius: 35px;
+    max-width: 100%; /* Ensure the image doesn't exceed its container's width */
+    max-height: 100%; /* Ensure the image doesn't exceed its container's height */
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
     border-radius: 35px;
 }
 
@@ -202,6 +226,9 @@ section {
     gap: 1rem;
     max-width: 100%;
     flex-wrap: wrap;
+    position: relative;
+    width: 100%;
+    overflow: hidden;
 }
 
 .team-bawah {
@@ -210,6 +237,15 @@ section {
     gap: 1rem;
     max-width: 100%;
     flex-wrap: wrap;
+    position: relative;
+    width: 100%;
+    overflow: hidden;
+}
+
+.team img {
+    max-width: 300px; /* Set a maximum width */
+    max-height: 300px; /* Set a maximum height */
+    aspect-ratio: 1 / 1; /* Maintain a 1:1 aspect ratio */
 }
 
 .footer {
@@ -233,8 +269,9 @@ section {
         justify-content: center;
         background-color: rgba(255, 255, 255, 0.4);
         border-radius: 35px;
-        padding: 0.25rem 0.5rem;
+        /* padding: 0.25rem 0.5rem; */
         overflow: auto;
+        transform: scale(0.75);
     }
 
     .navbar .menu-bar {
@@ -340,9 +377,6 @@ section {
 
 /* Add this to your existing styles.css or create a new one */
 
-
-
-
 .event-form {
     max-width: 400px;
     margin: auto;
@@ -389,4 +423,3 @@ button {
 button:hover {
     background-color: #45a049;
 }
-

@@ -1,5 +1,6 @@
 <?php
 
+use App\Http\Controllers\AuthManager;
 use App\Http\Controllers\EventController;
 use App\Http\Controllers\ProfileController;
 use Illuminate\Support\Facades\Route;
@@ -15,9 +16,8 @@ use Illuminate\Support\Facades\Route;
 |
 */
 
-Route::get('/', function () {
-    return view('welcome');
-});
+Route::view('/', 'index');
+Route::view('/admin', 'admin')->name('admin');
 
 Route::get('/dashboard', function () {
     return view('dashboard');
@@ -35,3 +35,15 @@ Route::post('/events', [EventController::class, 'store'])->name('events.store');
 // ... other routes
 
 
+Route::get('/register', [AuthManager::c lass, 'regist'])->name('regist');
+Route::post('/register', [AuthManager::class, 'registPost'])->name('regist.post');
+Route::get('/regist', [AuthManager::class, 'regist'])->name('regist');
+Route::post('/regist', [AuthManager::class, 'registPost'])->name('regist.post');
+
+// routes/web.php
+Route::get('/events', [EventController::class, 'index'])->name('events.index');
+Route::get('/events/create', [EventController::class, 'create'])->name('events.create');
+Route::post('/events', [EventController::class, 'store'])->name('events.store');
+// ... other routes
+
+require __DIR__ . '/auth.php';
