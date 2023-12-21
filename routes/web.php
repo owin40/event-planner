@@ -35,7 +35,7 @@ Route::post('/events', [EventController::class, 'store'])->name('events.store');
 // ... other routes
 
 
-Route::get('/register', [AuthManager::c lass, 'regist'])->name('regist');
+Route::get('/register', [AuthManager::class, 'regist'])->name('regist');
 Route::post('/register', [AuthManager::class, 'registPost'])->name('regist.post');
 Route::get('/regist', [AuthManager::class, 'regist'])->name('regist');
 Route::post('/regist', [AuthManager::class, 'registPost'])->name('regist.post');
