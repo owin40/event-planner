@@ -1,0 +1,4 @@
+Kalauu ada error di line 1 index.blade.php,
+do this in cmd 
+
+composer dump-autoload

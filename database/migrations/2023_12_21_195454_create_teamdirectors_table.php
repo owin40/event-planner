@@ -13,12 +13,11 @@ return new class extends Migration
      */
     public function up()
     {
-        Schema::create('sections', function (Blueprint $table) {
+        Schema::create('teamdirectors', function (Blueprint $table) {
             $table->id();
-            $table->string('title');
+            $table->string('position');
             $table->string('thumbnail');
-            $table->longtext('content');
-            $table->enum('post_as',['Event','ABOUT'])->nullable();
+            $table->string('name');
             $table->timestamps();
         });
     }
@@ -30,6 +29,6 @@ return new class extends Migration
      */
     public function down()
     {
-        Schema::dropIfExists('sections');
+        Schema::dropIfExists('teamdirectors');
     }
 };

@@ -176,6 +176,8 @@ section {
 .about .about-content {
     max-width: 50vw;
     padding: 0 2rem;
+    text-align: justify;
+    text-justify: inter-word;
 }
 
 .about-image {

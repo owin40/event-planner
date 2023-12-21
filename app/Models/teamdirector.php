@@ -6,10 +6,10 @@ use Illuminate\Database\Eloquent\Model;
 use Illuminate\Support\Facades\Storage;
 use Illuminate\Database\Eloquent\Factories\HasFactory;
 
-class event extends Model
+class teamdirector extends Model
 {
     use HasFactory;
-    protected $fillable = ['title','thumbnail','content'];
+    protected $fillable = ['position','thumbnail','name'];
 
     protected static function boot(){
 

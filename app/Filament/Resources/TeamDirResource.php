@@ -2,23 +2,24 @@
 
 namespace App\Filament\Resources;
 
-use App\Filament\Resources\EventResource\Pages;
-use App\Filament\Resources\EventResource\RelationManagers;
-use App\Models\Event;
+use App\Filament\Resources\TeamDirResource\Pages;
+use App\Filament\Resources\TeamDirResource\RelationManagers;
+use App\Models\TeamDir;
+use App\Models\teamdirector;
 use Filament\Forms;
+use Filament\Forms\Components\Card;
+use Filament\Notifications\Collection;
 use Filament\Resources\Form;
 use Filament\Resources\Resource;
 use Filament\Resources\Table;
 use Filament\Tables;
 use Illuminate\Database\Eloquent\Builder;
 use Illuminate\Database\Eloquent\SoftDeletingScope;
-use Filament\Forms\Components\Card;
-use Illuminate\Database\Eloquent\Collection;
 use Illuminate\Support\Facades\Storage;
 
-class EventResource extends Resource
+class TeamDirResource extends Resource
 {
-    protected static ?string $model = Event::class;
+    protected static ?string $model = teamdirector::class;
 
     protected static ?string $navigationIcon = 'heroicon-o-collection';
 
@@ -75,9 +76,9 @@ class EventResource extends Resource
     public static function getPages(): array
     {
         return [
-            'index' => Pages\ListEvents::route('/'),
-            'create' => Pages\CreateEvent::route('/create'),
-            'edit' => Pages\EditEvent::route('/{record}/edit'),
+            'index' => Pages\ListTeamDirs::route('/'),
+            'create' => Pages\CreateTeamDir::route('/create'),
+            'edit' => Pages\EditTeamDir::route('/{record}/edit'),
         ];
     }    
 }

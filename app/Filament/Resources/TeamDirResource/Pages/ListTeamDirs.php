@@ -1,14 +1,14 @@
 <?php
 
-namespace App\Filament\Resources\SectionResource\Pages;
+namespace App\Filament\Resources\TeamDirResource\Pages;
 
-use App\Filament\Resources\SectionResource;
+use App\Filament\Resources\TeamDirResource;
 use Filament\Pages\Actions;
 use Filament\Resources\Pages\ListRecords;
 
-class ListSections extends ListRecords
+class ListTeamDirs extends ListRecords
 {
-    protected static string $resource = SectionResource::class;
+    protected static string $resource = TeamDirResource::class;
 
     protected function getActions(): array
     {

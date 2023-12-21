@@ -1,3 +1,9 @@
+@php
+$event = get_event();
+$teamdir = get_team_dir();
+$teamfound = get_team_found();
+@endphp
+
 <!DOCTYPE html>
 <html lang="en">
 
@@ -58,6 +64,18 @@
           <img src="{{ asset('images/event4.jpg') }}" alt="">
           <h3>Model</h3>
         </div>
+        @php
+            $i=1;
+        @endphp
+        @foreach ($event as $item)
+        <div class="icar">
+          <img src="{{ Storage::url($item->thumbnail) }}" alt="">
+          <h3>{!! strip_tags($item->title) !!}</h3>   
+          @php
+              $i++;
+          @endphp
+        @endforeach
+        
       </div>
     </div>
   </section>
@@ -113,6 +131,17 @@
             <h4>Chief Financial Officer</h4>
             <p>Iyan Suhendar (Abi)</p>
           </div>
+          @php
+          $j=1;
+          @endphp
+          @foreach ($teamdir as $item1)
+          <div class="icar"><img src="{{ Storage::url($item1->thumbnail) }}" alt="">
+            <h4>{!! strip_tags($item1->position) !!}</h4>
+            <p>{!! strip_tags($item1->name) !!}</p>
+          @php
+          $j++;
+          @endphp
+          @endforeach
         </div>
 
         <h2>Brenna Signature Founder Team</h2>
@@ -142,6 +171,18 @@
             <h4>Event Promotion</h4>
             <p>Cece Ekalita</p>
           </div>
+          @php
+              $k=1;
+          @endphp
+          @foreach ($teamfound as $item2)
+          <div class="icar"><img src="{{ Storage::url($item2->thumbnail) }}" alt="">
+            <h4>{!! strip_tags($item2->position) !!}</h4>
+            <p>{!! strip_tags($item2->name) !!}</p>
+          </div>
+          @php
+              $k++;
+          @endphp
+          @endforeach
         </div>
       </div>
     </div>
