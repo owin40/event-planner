@@ -1,22 +1,22 @@
 <?php
 
-namespace App\Filament\Resources\SectionResource\Pages;
+namespace App\Filament\Resources\EventResource\Pages;
 
-use App\Filament\Resources\SectionResource;
-use App\Models\section;
+use App\Filament\Resources\EventResource;
+use App\Models\event;
 use Filament\Pages\Actions;
 use Filament\Resources\Pages\EditRecord;
 use Illuminate\Support\Facades\Storage;
 
-class EditSection extends EditRecord
+class EditEvent extends EditRecord
 {
-    protected static string $resource = SectionResource::class;
+    protected static string $resource = EventResource::class;
 
     protected function getActions(): array
     {
         return [
             Actions\DeleteAction::make()->after(
-                function(section $record){
+                function(event $record){
                     if($record->thumbnail){
                         Storage::disk('public')->delete($record->thumbnail);
                     }
