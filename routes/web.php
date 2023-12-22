@@ -23,6 +23,9 @@ Route::get('/dashboard', function () {
     return view('dashboard');
 })->middleware(['auth', 'verified'])->name('dashboard');
 
+Route::get('/profile/edit','ProfileController@edit')->name('profile.edit');
+
+
 Route::get('/register',[AuthManager::class, 'regist'])->name('regist');
 Route::post('/register',[AuthManager::class, 'registPost'])->name('regist.post');
 Route::get('/regist',[AuthManager::class, 'regist'])->name('regist');

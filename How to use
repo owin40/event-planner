@@ -1,0 +1,14 @@
+Pertama-tama login dulu di 127.0.0.1:8000/Admin/Login
+
+
+Jika sudah, akan dibawa ke Dashboard Filament
+
+Untuk memasukan data Event:
+1. Isi Judul Event, Foto, dan Keterangannya
+2. Save Changes
+
+Untuk memasukan data Team Directur maupun Founder:
+1. Isi Posisi Serta Nama Beliau, lalu upload fotonya juga.
+2. Save Changes
+
+Kembali ke Laman Utama
