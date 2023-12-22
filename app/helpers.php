@@ -9,12 +9,12 @@ function get_event(){
     return $data;
 }
 
-function get_team_dir(){
+function get_team_director(){
     $data = teamdirector::all();
     return $data;
 }
 
-function get_team_found(){
+function get_team_founder(){
     $data = teamfounder::all();
     return $data;
 }

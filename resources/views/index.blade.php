@@ -1,7 +1,7 @@
 @php
 $event = get_event();
-$teamdir = get_team_dir();
-$teamfound = get_team_found();
+$teamdir = get_team_director();
+$teamfound = get_team_founder();
 @endphp
 
 <!DOCTYPE html>
@@ -134,7 +134,7 @@ $teamfound = get_team_found();
           @php
           $j=1;
           @endphp
-          @foreach ($teamdir as $item1)
+          @foreach ($teamdirector as $item1)
           <div class="icar"><img src="{{ Storage::url($item1->thumbnail) }}" alt="">
             <h4>{!! strip_tags($item1->position) !!}</h4>
             <p>{!! strip_tags($item1->name) !!}</p>
@@ -174,7 +174,7 @@ $teamfound = get_team_found();
           @php
               $k=1;
           @endphp
-          @foreach ($teamfound as $item2)
+          @foreach ($teamfounder as $item2)
           <div class="icar"><img src="{{ Storage::url($item2->thumbnail) }}" alt="">
             <h4>{!! strip_tags($item2->position) !!}</h4>
             <p>{!! strip_tags($item2->name) !!}</p>
